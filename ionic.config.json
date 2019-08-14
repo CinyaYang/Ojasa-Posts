@@ -1,0 +1,7 @@
+{
+  "name": "posts",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
