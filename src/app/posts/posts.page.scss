@@ -1,0 +1,36 @@
+.postContainer {
+  width: 100%;
+}
+
+.title {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.commentsNumber {
+  float: right;
+  color: gray;
+  font-size: 14px;
+}
+
+.userName {
+  padding: 5px 0 !important;
+  color: #88858a;
+}
+
+.body {
+  padding: 5px 0;
+  color: #3e3c3c;
+}
+
+.bottomContainer {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.companyName {
+  display: flex;
+  flex-grow: 1;
+}

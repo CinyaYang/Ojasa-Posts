@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list
+    ><ion-item *ngFor="let post of posts">
+      <div class="postContainer">
+        <div class="title">
+          {{ post.title }}
+        </div>
+        <div class="body">
+          {{ post.body }}
+        </div>
+        <div class="userName">User: {{ post.contributorName }}</div>
+        <div class="bottomContainer">
+          <div class="companyName">
+            Company: {{ post.contributorCompanyName }}
+          </div>
+          <div class="commentsNumber">
+            Number of Comments: {{ post.commentsNumber }}
+          </div>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="onload($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading 10 more posts..."
+    >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
